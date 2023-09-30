@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Form Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <h3 class="text-center">Form Example</h3>
+        <p>Fill out the form below:</p>
+
+        <form action="/action_page.php" class="was-validated">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label"><i class="fas fa-user"></i> First Name:</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name"
+                        name="firstName" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label"><i class="fas fa-user"></i> Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name" name="lastName"
+                        required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field with a valid email address.</div>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label"><i class="fas fa-phone"></i> Phone:</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" name="phone"
+                    required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label"><i class="fas fa-home"></i> Address:</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter address" name="address"
+                    required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="city" class="form-label"><i class="fas fa-map-marker-alt"></i> City:</label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter city" name="city" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="state" class="form-label"><i class="fas fa-globe"></i> State:</label>
+                    <select class="form-select" id="state" name="state" required>
+                        <option value="">Select State</option>
+                        <option value="CA">California</option>
+                        <option value="NY">New York</option>
+                        <option value="TX">Texas</option>
+                        <!-- Add more states as needed -->
+                    </select>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please select a state.</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label"><i class="fas fa-check-circle"></i> Do you have hosting?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hosting" id="hostingYes" value="Yes" required>
+                    <label class="form-check-label" for="hostingYes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="hosting" id="hostingNo" value="No" required>
+                    <label class="form-check-label" for="hostingNo">No</label>
+                </div>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please select an option.</div>
+            </div>
+            <div class="mb-3">
+                <label for="projectDescription" class="form-label"><i class="fas fa-pencil-alt"></i> Project
+                    Description:</label>
+                <textarea class="form-control" id="projectDescription" rows="4" name="projectDescription"
+                    required></textarea>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
